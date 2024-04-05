@@ -24,7 +24,7 @@
     "prisma:deploy": "npx prisma migrate deploy --schema=./src/config/prisma/schema.prisma",
     "prisma:pull": "npx prisma db pull --schema=./src/config/prisma/schema.prisma",
     "prisma:studio": "npx prisma studio --schema=./src/config/prisma/schema.prisma",
-    "postinstall": "yarn prisma:generate"
+    "postinstall": "npm run prisma:generate"
   },
   "dependencies": {
     "@nestjs/common": "^9.0.0",
@@ -32,6 +32,7 @@
     "@nestjs/core": "^9.0.0",
     "@nestjs/mapped-types": "*",
     "@nestjs/platform-express": "^9.0.0",
+    "@nestjs/swagger": "^7.3.1",
     "@prisma/client": "^5.11.0",
     "joi": "^17.12.2",
     "reflect-metadata": "^0.1.13",

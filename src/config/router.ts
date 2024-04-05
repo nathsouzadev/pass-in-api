@@ -1,3 +1,4 @@
+import { AttendeeModule } from '../attendee/attendee.module';
 import { EventModule } from '../event/event.module';
 
 export const router = [
@@ -7,6 +8,10 @@ export const router = [
       {
         path: 'event',
         module: EventModule,
+      },
+      {
+        path: 'attendee',
+        module: AttendeeModule,
       },
     ],
   },
